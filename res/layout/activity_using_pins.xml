@@ -17,6 +17,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
         android:onClick="nextExample"
-        android:text="Next example" />
+        android:text="@string/button_next_example" />
     
 </LinearLayout>

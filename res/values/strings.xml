@@ -4,6 +4,8 @@
     <string name="app_name">MapAPIv2</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_using_pins">UsingPins</string>
+    <string name="title_activity_using_pins">Using markers on the map</string>
+    <string name="button_next_example">Next Example</string>
+    <string name="title_activity_add_and_move_markes">Add and move markers</string>
 
 </resources>

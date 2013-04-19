@@ -7,14 +7,18 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import android.app.FragmentManager;
+import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.View;
 
 public class UsingPins extends FragmentActivity {
 	
@@ -27,8 +31,10 @@ public class UsingPins extends FragmentActivity {
 		GoogleMap map = mapFrag.getMap();
 		map.addMarker(new MarkerOptions().position(new LatLng(55.703946,12.537493)).title("Copenhagen School of Design and Technology"));
 
-		map.addMarker(new MarkerOptions().position(new LatLng(52.336924,4.928485)).title("Hogeschool van Amsterdam").);
-		map.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+		
+		map.addMarker(new MarkerOptions().position(new LatLng(52.336924,4.928485)).title("Hogeschool van Amsterdam").icon(BitmapDescriptorFactory.fromResource(R.drawable.hva_medium)));
+			
+		map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
 		
 		map.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(52.336924,4.928485)));
 		map.moveCamera(CameraUpdateFactory.zoomTo(6));
@@ -41,4 +47,8 @@ public class UsingPins extends FragmentActivity {
 		return true;
 	}
 
+	// button clicked - move to another activity!
+	public void nextExample(View view){ 
+		startActivity(new Intent(getApplicationContext(), AddAndMoveMarkes.class));
+	}
 }
