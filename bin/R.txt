@@ -27,10 +27,12 @@ int id satellite 0x7f040002
 int id terrain 0x7f040003
 int layout activity_add_and_move_markes 0x7f030000
 int layout activity_map_apiv2 0x7f030001
-int layout activity_using_pins 0x7f030002
+int layout activity_markers_connected_with_lines 0x7f030002
+int layout activity_using_pins 0x7f030003
 int menu add_and_move_markes 0x7f080000
 int menu map_apiv2 0x7f080001
-int menu using_pins 0x7f080002
+int menu markers_connected_with_lines 0x7f080002
+int menu using_pins 0x7f080003
 int string action_settings 0x7f050012
 int string app_name 0x7f050011
 int string auth_client_availability_notification_title 0x7f05000e
@@ -53,6 +55,7 @@ int string common_google_play_services_update_title 0x7f050007
 int string common_signin_button_text_long 0x7f05000d
 int string hello_world 0x7f050013
 int string title_activity_add_and_move_markes 0x7f050016
+int string title_activity_markers_connected_with_lines 0x7f050017
 int string title_activity_using_pins 0x7f050014
 int style AppBaseTheme 0x7f070000
 int style AppTheme 0x7f070001

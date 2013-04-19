@@ -9,9 +9,12 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
+import android.view.View;
 
 public class AddAndMoveMarkes extends FragmentActivity{
 
@@ -68,14 +71,13 @@ public class AddAndMoveMarkes extends FragmentActivity{
 				marker.showInfoWindow();
 			}
 		});
+	}
 		
+	public void nextExample(View view){
+		startActivity(new Intent(this, MarkersConnectedWithLines.class));
 	}
+	
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.add_and_move_markes, menu);
-		return true;
-	}
+	
 
 }

@@ -7,5 +7,6 @@
     <string name="title_activity_using_pins">Using markers on the map</string>
     <string name="button_next_example">Next Example</string>
     <string name="title_activity_add_and_move_markes">Add and move markers</string>
+    <string name="title_activity_markers_connected_with_lines">Add Markers to the map</string>
 
 </resources>

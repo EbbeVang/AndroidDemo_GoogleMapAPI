@@ -53,6 +53,10 @@
             android:name="dk.lowtide.MapAPIv2.AddAndMoveMarkes"
             android:label="@string/title_activity_add_and_move_markes" >
         </activity>
+        <activity
+            android:name="dk.lowtide.MapAPIv2.MarkersConnectedWithLines"
+            android:label="@string/title_activity_markers_connected_with_lines" >
+        </activity>
     </application>
 
 </manifest>
